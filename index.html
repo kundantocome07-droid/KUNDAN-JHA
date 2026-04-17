@@ -489,6 +489,20 @@ function show(id, btn) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+
+
+  <script>
+function checkPw() {
+  const pw = document.getElementById("pw-inp").value;
+  
+  if (pw === "kundan12266") {
+    document.getElementById("pw-gate").style.display = "none";
+    document.getElementById("site").classList.add("show");
+  } else {
+    document.getElementById("pw-err").innerText = "Wrong password!";
+  }
+}
+</script>
 window.onload = () => { document.getElementById('pw-gate').style.display = 'flex'; };
 </script>
 </body>
